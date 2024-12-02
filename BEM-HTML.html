@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Homework</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!--Header-->
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1200px-W3Schools_logo.svg.png"
             class="header__logo" alt="header logo">
@@ -27,33 +27,20 @@
             <button class="menu-left__button-dropdown"> Services
                 <i class="fa fa-caret-down"></i>
             </button>
-            <input type="search" placeholder="search...">
-            <div class="darkmode__toggle"></div>
+            <input type="search" placeholder="Search...">
+            <button class="darkmode__toggle"></button>
         </div>
 
         <div class="header__menu-right">
-            <button class="menu-right__button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 12 16" fill="none"
-                    aria-hidden="true">
-                </svg>
-                Plus
-            </button>
-            <button class="menu-right__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" aria-hidden="true">
-                </svg>
-                Spaces
-            </button>
-            <button class="menu-right__button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" aria-hidden="true">
-                </svg>
-                Get Certified
-            </button>
+            <button class="menu-right__button">For Teachers</button>
+            <button class="menu-right__button">Plus</button>
+            <button class="menu-right__button">Spaces</button>
+            <button class="menu-right__button">Get Certified</button>
             <button class="login__button"> Log in
                 <i class="fa fa-user"></i>
             </button>
         </div>
     </header>
-    <!--Tabmenu-->
     <div class="tab-menu">
         <a class="tab-menu__tab-item--active"> HTML </a>
         <a class="tab-menu__tab-item"> CSS </a>
@@ -74,10 +61,8 @@
         <a class="tab-menu__tab-item"> Excel </a>
         <a class="tab-menu__tab-item"> XML </a>
     </div>
-    <!-- Main body container -->
     <div class="content__container">
         <aside class="sidebar">
-            <!-- HTML Tutorial -->
             <div class="topic">
                 <h3 class="topic__title"> HTML Tutorial </h3>
                 <div class="topic__link">
@@ -96,11 +81,9 @@
 
                 </div>
             </div>
-            <!-- HTML Forms -->
             <div class="topic">
                 <h3 class="topic__title"> HTML Forms </h3>
-                <div class="topic__link">
-                    <a href="" class="right-menu__item"> HTML Forms </a>
+                <div class="topic__link"> <a href="" class="right-menu__item"> HTML Forms </a>
                     <a href="" class="right-menu__item"> HTML Form Attributes </a>
                     <a href="" class="right-menu__item"> HTML Form Elements </a>
                     <a href="" class="right-menu__item"> HTML Input Types </a>
@@ -108,7 +91,6 @@
                     <a href="" class="right-menu__item"> Input Form Attributes </a>
                 </div>
             </div>
-            <!-- HTML Graphics -->
             <div class="topic">
                 <h3 class="topic__title"> HTML Graphics </h3>
                 <div class="topic__link">
@@ -116,7 +98,6 @@
                     <a href="" class="right-menu__item"> HTML SVG </a>
                 </div>
             </div>
-            <!-- HTML Media -->
             <div class="topic">
                 <h3 class="topic__title"> HTML Media </h3>
                 <div class="topic__link">
@@ -127,7 +108,6 @@
                     <a href="" class="right-menu__item"> HTML YouTube </a>
                 </div>
             </div>
-            <!-- HTML APIs -->
             <div class="topic">
                 <h3 class="topic__title"> HTML APIs </h3>
                 <div class="topic__link">
@@ -140,113 +120,81 @@
             </div>
         </aside>
         <section class="section">
-            <!-- Main Section -->
             <div class="section-main">
                 <div class="section__center">
-                    <!-- Google ads -->
                     <div class="container__google-ads">
                         <div class="ads__container">
-                            <div class="ads__content">
-                                <h4>Here is ads subtitle</h4>
-                                <p class="text__body--medium">Here is ads detail</p>
-                            </div>
-                            <button class="ads__button"> View more </button>
+                            <hr>
+                            <h4> ADVERTISEMENT </h4> 
+                            <hr>
                         </div>
                     </div>
-                    <!-- Main Content -->
                     <h1> HTML Tutorial </h1>
                     <div class="prenext">
-                        <button class="button__button-primary"> Home </button>
-                        <button class="button__button-primary"> Next </button>
+                        <button class="button__button-primary"><strong>&lt Home  </strong></button>
+                        <button class="button__button-primary"> <strong>Next &gt </strong></button>
                     </div>
                     <div class="container__topic-infomation">
                         <p class="text__body--medium"> HTML is the standard markup language for Web pages. </p>
                         <p class="text__body--medium"> With HTML you can create your own Website. </p>
                         <p class="text__body--medium"> HTML is easy to learn - You will enjoy it! </p>
-                        <button class="button__button-primary"> Study our free HTML Tutorial » </button>
+                        <button class="button__button-primary"><strong>Study our free HTML Tutorial » </strong></button>
                     </div>
                     <hr>
-                    <!-- Try it Yourself -->
                     <h2> Easy Learning with HTML "Try it Yourself" </h2>
                     <p class="text__body--medium"> With our "Try it Yourself" editor, you can edit the HTML code and view the result: </p>
                     <div class="container__example">
                         <h3> Example</h3>
                         <div class="example-code">
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor"
-                                    style="color:red">
-                                    html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>html<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
-                                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
-                                class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>title<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
-                                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
-                                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
-                                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span
-                                class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span>This is a Heading<span class="tagnamecolor"
-                                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
-                                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
-                                class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span>This is a paragraph.<span
-                                class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span><br><br>
-                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                    style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
-                                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
-                                    class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Page Title&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br><br>
+                            &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
                         </div>
-                        <button class="button__button-primary"> Try it Yourself >> </button>
+                        <button class="button__button-primary"><strong> Try it Yourself » </strong></button>
                     </div>
                     <strong> Click on the "Try it Yourself" button to see how it works. </strong>
                     <hr>
-                    <!-- Example -->
                     <h2> HTML Example </h2>
                     <p class="text__body--medium"> In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself" editor, you can edit and test each example yourself! </p>
-                    <button class="button__button-primary"> Go to HTML Examples! </button>
+                    <button class="button__button-primary"><strong> Go to HTML Examples! </strong></button>
                     <hr>
-                    <!-- Google ads -->
-                    <div class="container__google-ads">
-                        <div class="ads__container">
-                            <div class="ads__content">
-                                <h4>Here is ads subtitle</h4>
-                                <p class="text__body--medium">Here is ads detail</p>
-                            </div>
-                            <button class="ads__button"> View more </button>
-                        </div>
-                    </div>
+                    <h4>ADVERTISEMENT</h4>
                     <hr>
-                    <!-- Exercises -->
                     <h2> HTML Exercises </h2>
-                    <p class="text__body--medium"> This HTML tutorial also contains nearly 100 HTML exercises. </p>
+                    <p class="text__body--medium"> Many chapters in this tutorial end with an exercise where you can check you level of knowledge.                    </p>
                     <div class="container__exercises">
-                        <h2> Test Yourself With Exercises </h2>
                         <div class="exercise__detail">
-                            <h2> Exercise: </h2>
-                            <p class="text__body--medium"> Add a "tooltip" to the paragraph below with the text "About W3Schools". </p>
-                            <div class="exercise__description">
-                                &lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+                            <h5> Exercise </h5>
+                            <br>
+                            <p class="quiz-text"> What is a correct syntax for an HTML hyperlink?</p>
+                            <br>
+                            <div class="exercise__question">
+                                <input type="radio" name="quiz1" id="quiz1" value="quiz1"> 
+                                &lta href='/home.htm'>Visit W3Schools.com!&gt
+                                <br>
+                                <input type="radio" name="quiz2" id="quiz2" value="quiz3"> 
+                                &ltlink href='/home.htm'>Visit W3Schools.com!&lt/link'>&gt
+                                <br>
+                                <input type="radio" name="quiz3" id="quiz3" value="quiz3"> 
+                                &ltalink href='/home.htm'>Visit W3Schools.com!&lt/alink'&gt
                             </div>
-                            <button class="button__button-primary"> Submit answer </button>
+                            <div class="button-container">
+                                <button class="button--submit__answer"><strong>Submit Answer »</strong></button>
+                            </div>
                         </div>
                     </div>
+                    <button class="button__button-primary"><strong> See all HTML Exercise </strong></button>
                     <hr>
-                    <!-- HTML Quiz Test -->
                     <h2> HTML Quiz Test </h2>
                     <p class="text__body--medium"> Test your HTML skills with our HTML Quiz! </p>
-                    <button class="button__button-primary"> Try it Yourself >> </button>
+                    <button class="button__start--quiz"><strong> Start HTML Quiz! </strong></button>
                     <hr>
                     <h2> My Learning </h2>
                     <p class="text__body--medium"> Track your progress with the free "My Learning" program here at W3Schools. </p>
@@ -305,15 +253,14 @@
                     </div>
                 </div>
                 <hr>
-                <!-- Right side -->
                 <div class="section__right-side"> ADVERTISEMENT </div>
             </div>
             <footer>
-                <!-- footer top -->
                 <div class="container__footer-top">
                     <img src="https://www.w3schools.com/excel/img_excel_w3_logo.png"
                     class="footer__logo" alt="header logo">
                     <div>
+                        <button class="footer__button"> Plus </button>
                         <button class="footer__button"> Spaces </button>
                         <button class="footer__button"> Upgrade </button>
                         <button class="footer__button"> Ad-Free </button>
@@ -322,7 +269,6 @@
                         <button class="footer__button"> Contact us </button>
                     </div>
                 </div>
-                <!-- footer middle -->
                 <div class="container__footer-middle">
                     <div class="footer-link">
                         <h3 class="link-wrapper__title"> Top tutorials </h3>
@@ -393,12 +339,24 @@
                         </div>
                     </div>
                 </div>
-                <!-- footer bottom -->
-                <div class="container__footer-bottom">
-                    <div class="footer-botton__social-icon">
-                    </div>
-                    <p class="text__body--medium"> W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy. </p>
+                <div class="footer__menu">
+                    <a href="#" class="footer__icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#">FORUM</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">ACADEMY</a>
                 </div>
+                <p class="footer__text">
+                    W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, 
+                    but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our
+                    <a href="#">terms of use</a>, <a href="#">cookie</a>, and <a href="#">privacy policy</a>.
+                </p>
+                <p class="footer__copyright">
+                    Copyright 1999-2024 by Refnes Data. All Rights Reserved. W3Schools is Powered by <a href="#">W3.CSS</a>.
+                </p>
             </footer>
         </section>
     </div>
